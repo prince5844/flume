@@ -1,0 +1,2 @@
+create external table mytweets1(username string,lang string,screen_name string,id bigint,created_at string,text string,post_id bigint,post_created_at string,hashtage string,retweet boolean,favorited boolean,retweet_count bigint,friends_count int,followers_count int,status_count int,verified boolean,utc_offset int,time_zone string,retweeted_username string,retweeted_screen_name string,retweeted_id bigint,retweeted_test string,retweeted_retweet_count bigint)partitioned by (datehour int,rating string) location '/user/flume/tweets';
+

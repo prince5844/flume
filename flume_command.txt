@@ -1,0 +1,1 @@
+bin/flume-ng agent -n TwitterAgent --conf ./conf/ -f conf/flume.conf -Dflume.root.logger=DEBUG,console
